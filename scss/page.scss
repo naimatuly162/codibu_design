@@ -1,25 +1,46 @@
-
 .bg-image {
   position: relative;
-  width: 520px;
-  background-image: linear-gradient(90deg, #00223F 0%, rgba(0, 0, 0, 0.85) 100%), url('../assets/Signup Cover 1.svg');
+  height: 100%;
+  width: 100%;
+  background:  url("assets/SignupCover.svg");
+  background-color: rgba(0, 0, 0, 0.85);
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 9;
-  &:after {
+
+  //&:after {
+  //  position: absolute;
+  //  background-color: rgba(0, 0, 0, 0.85);
+  //  z-index: -1;
+  //  opacity: 0.7;
+  //}
+  &:after{
+    height: 100%;
+    width: 100%;
     position: absolute;
+    background:  rgba(0, 0, 0, 0.85);
     content: "";
     top: 0;
     left: 0;
-    height: 1024px;
-    background-image: linear-gradient(90deg, #00223F 0%, rgba(0, 0, 0, 0.85) 100%), url('../assets/Signup Cover 1.svg');
     z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .left-section {
-    width: 520px;
     margin-left: 75px;
+
+    @media (max-width: 1257px) {
+      margin-left: 44px;
+    }
+
     .logo-img {
-      margin: 62px 207px 192px 0;
+      margin: 62px 179px 192px 0;
       height: 19.90496826171875px;
       width: 153.24525451660156px;
+
+      @media (max-width: 1257px) {
+        margin: 54px 68px 75px 0;
+      }
     }
     h1 {
       font-family: Poppins;
@@ -37,7 +58,9 @@
         color: #FFFFFF;
         list-style: none;
         margin-bottom: 28px;
-        margin-right: 50px;
+        margin-right: 43px;
+        font-size: 16px;
+        line-height: 24px;
         img {
           padding-right: 12px;
         }
@@ -45,11 +68,12 @@
     }
   }
 }
-
+.col-md-8{
+  padding: 0;
+  margin: 0;
+}
 .right-section {
-  width: 920px;
   background: #FFFFFF;
-
   p{
     font-family: Poppins;
     margin: 60px 16px 92px 474px;
@@ -61,10 +85,8 @@
     width: 214px;
     height: 24px;
   }
-
   .form {
-
-    margin: 176px 171px 85px 173px;
+    margin: 176px 85px 85px 173px;
     h1 {
       font-family: Poppins;
       font-style: normal;
@@ -74,7 +96,6 @@
       color: #000000;
       margin-bottom: 50px;
     }
-
     a {
       text-decoration: none;
       font-family: Poppins;
@@ -83,17 +104,15 @@
       font-size: 14px !important;
       line-height: 24px;
       color: #333333;
-      padding: 16px 38px;
+      padding: 14px 38px 16px 39px;;
       border: 1px solid skyblue;
       border-radius: 5.2px;
       margin-bottom: 15px;
       display: block;
-
       img {
         margin-right: 12px;
       }
     }
-
     h6{
       font-family: Poppins;
       margin-top: 24px;
@@ -105,16 +124,15 @@
       line-height: 21px;
       color: rgba(0, 0, 0, 0.5);
     }
-
     h6 {
       display: flex;
       flex-direction: row;
     }
     h6:before, h6:after{
+
       content: "";
       flex: 1 1;
       border-bottom: 1px solid  rgba(30, 130, 255, 0.12);
-
       margin: auto;
     }
     h6:before {
@@ -123,11 +141,8 @@
     h6:after {
       margin-left: 10px
     }
-
-
     .form-row {
       position: relative;
-
       label {
         font-family: Poppins;
         font-style: normal;
@@ -138,11 +153,14 @@
         margin-bottom: 16px;
       }
       input{
+        font-family: Poppins;
         padding: 16px 42px;
-        border: 1px solid skyblue;
+        border: 1px solid #18ade7;
         margin-right: 15px;
         margin-bottom: 15px;
         border-radius: 5.2px;
+        font-style: normal;
+
       }
       img{
         position: absolute;
@@ -155,7 +173,12 @@
       color: skyblue;
     }
     .form-check{
+      margin-top: 18px;
       margin-bottom: 33px;
+      font-family: Poppins;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000000;
     }
     .signup-button{
       font-family: Poppins;
@@ -163,7 +186,7 @@
       left: 693px;
       background: linear-gradient(90deg, #00C6FF 9.37%, #1E82FF 100%);
       border-radius: 5.4px;
-      padding: 15px 48px;
+      padding: 15px 16px 15px 48px;
       border: none;
       font-size: 16px;
       line-height: 24px;
