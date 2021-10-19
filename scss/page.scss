@@ -2,7 +2,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background:  url("assets/SignupCover.svg");
+  background: url("assets/SignupCover.svg");
   background-color: rgba(0, 0, 0, 0.85);
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,11 +14,11 @@
   //  z-index: -1;
   //  opacity: 0.7;
   //}
-  &:after{
+  &:after {
     height: 100%;
     width: 100%;
     position: absolute;
-    background:  rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.85);
     content: "";
     top: 0;
     left: 0;
@@ -26,11 +26,19 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .left-section {
     margin-left: 75px;
 
-    @media (max-width: 1257px) {
+    @media (max-width: 1400px) {
       margin-left: 44px;
+    }
+
+    @media (min-width: 768px) and (max-width: 981px) {
+      margin-left: 22px;
+    }
+    @media (max-width: 520px) {
+      margin-left: 22px;
     }
 
     .logo-img {
@@ -38,10 +46,18 @@
       height: 19.90496826171875px;
       width: 153.24525451660156px;
 
-      @media (max-width: 1257px) {
+      @media (max-width: 1400px) {
         margin: 54px 68px 75px 0;
       }
+      @media (max-width: 1016px) {
+        margin: 50px 12px 58px 0;
+        width: 120px;
+      }
+      @media (min-width: 768px) and (max-width: 981px) {
+        width: 97px;
+      }
     }
+
     h1 {
       font-family: Poppins;
       font-style: normal;
@@ -50,10 +66,22 @@
       line-height: 48px;
       color: #FFFFFF;
       margin-bottom: 40px;
+
+      @media (max-width: 1400px) {
+        font-size: 24px;
+      }
+      @media (max-width: 1016px) {
+        font-size: 21px;
+      }
+      @media (min-width: 768px) and (max-width: 981px) {
+        font-size: 15px;
+      }
     }
+
     ul {
       margin: 0;
       padding: 0;
+
       li {
         color: #FFFFFF;
         list-style: none;
@@ -61,20 +89,29 @@
         margin-right: 43px;
         font-size: 16px;
         line-height: 24px;
+        @media (max-width: 1400px) {
+          font-size: 13px;
+          margin-right: 22px;
+          margin-bottom: 18px;
+        }
+
         img {
           padding-right: 12px;
+          @media (max-width: 320px) {
+            padding-right: 9px;
+            height: 13px;
+          }
         }
       }
     }
   }
 }
-.col-md-8{
-  padding: 0;
-  margin: 0;
-}
+
+
 .right-section {
   background: #FFFFFF;
-  p{
+
+  p {
     font-family: Poppins;
     margin: 60px 16px 92px 474px;
     font-style: normal;
@@ -85,35 +122,91 @@
     width: 214px;
     height: 24px;
   }
+
   .form {
-    margin: 176px 85px 85px 173px;
+    width: 576px;
+    height: 1063px;
+    //margin: 176px 85px 85px 173px;
+    //
+    //@media (max-width: 1400px) {
+    //  margin: 88px 28px 75px 81px;
+    //}
+    //@media (min-width: 1401px) and (max-width: 1490px) {
+    //  margin: 88px 28px 75px 81px;
+    //}
+    //@media (max-width: 767px) {
+    //  margin: 88px 17px 75px 17px;
+    //}
+    //@media (min-width: 768px) and (max-width: 981px) {
+    //  margin: 86px 28px 75px 50px;
+    //}
     h1 {
       font-family: Poppins;
       font-style: normal;
       font-weight: 600;
       font-size: 38px;
-      line-height: 57px;
       color: #000000;
       margin-bottom: 50px;
+      @media (max-width: 1400px) {
+        font-size: 30px;
+      }
+      @media (max-width: 1400px) {
+        font-size: 27px;
+      }
+      @media (min-width: 768px) and (max-width: 981px) {
+        font-size: 21px;
+      }
+      @media (max-width: 550px) {
+        font-size: 18px;
+      }
+      @media (max-width: 320px) {
+        margin-bottom: 35px;
+      }
     }
+
     a {
       text-decoration: none;
       font-family: Poppins;
       font-style: normal;
       font-weight: 500;
       font-size: 14px !important;
-      line-height: 24px;
       color: #333333;
-      padding: 14px 38px 16px 39px;;
+      padding: 14px 38px 16px 34px;;
       border: 1px solid skyblue;
       border-radius: 5.2px;
       margin-bottom: 15px;
       display: block;
+
+      @media (max-width: 1512px) {
+        font-size: 12px !important;
+        padding: 13px 16px 13px 24px;
+      }
+      @media (max-width: 1190px) {
+        font-size: 14px !important;
+        padding-left: 14px;
+      }
+      @media (max-width: 390px) {
+        font-size: 13px !important;
+      }
+
       img {
         margin-right: 12px;
+
+        @media (max-width: 1400px) {
+          margin-right: 10px;
+          height: 14px;
+        }
+        @media (min-width: 1402px) {
+          height: 20px;
+        }
+        @media (min-width: 937px) and (max-width: 1022px) {
+          margin-right: 6px;
+          height: 12px;
+        }
       }
     }
-    h6{
+
+    h6 {
       font-family: Poppins;
       margin-top: 24px;
       margin-bottom: 24px;
@@ -124,35 +217,52 @@
       line-height: 21px;
       color: rgba(0, 0, 0, 0.5);
     }
+
     h6 {
       display: flex;
       flex-direction: row;
     }
-    h6:before, h6:after{
+
+    h6:before, h6:after {
 
       content: "";
       flex: 1 1;
-      border-bottom: 1px solid  rgba(30, 130, 255, 0.12);
+      border-bottom: 1px solid rgba(30, 130, 255, 0.12);
       margin: auto;
     }
+
     h6:before {
       margin-right: 10px
     }
+
     h6:after {
       margin-left: 10px
     }
+
     .form-row {
       position: relative;
+
       label {
         font-family: Poppins;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px!important;
+        font-size: 16px !important;
         line-height: 24px;
-        color: #222222!important;
+        color: #222222 !important;
         margin-bottom: 16px;
+
+        @media (max-width: 1257px) {
+          font-size: 14px !important;
+          margin-bottom: 12px;
+        }
+        @media (min-width: 768px) and (max-width: 981px) {
+          font-size: 12px !important;
+        }
+
+
       }
-      input{
+
+      input {
         font-family: Poppins;
         padding: 16px 42px;
         border: 1px solid #18ade7;
@@ -160,50 +270,84 @@
         margin-bottom: 15px;
         border-radius: 5.2px;
         font-style: normal;
+        font-size: 12px;
 
       }
-      img{
+
+      img {
         position: absolute;
         bottom: 32px;
         right: 38px;
       }
     }
-    span{
+
+    span {
       text-decoration: underline;
       color: skyblue;
     }
-    .form-check{
+
+    .form-check {
       margin-top: 18px;
       margin-bottom: 33px;
       font-family: Poppins;
       font-size: 14px;
       line-height: 21px;
       color: #000000;
+
+      @media (min-width: 768px) and (max-width: 981px) {
+        font-size: 11px;
+      }
     }
-    .signup-button{
+    .signup-button {
       font-family: Poppins;
       height: 54px;
-      left: 693px;
+      width: 85%;
       background: linear-gradient(90deg, #00C6FF 9.37%, #1E82FF 100%);
       border-radius: 5.4px;
-      padding: 15px 16px 15px 48px;
+      padding: 15px 16px 15px 28px;
       border: none;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.01em;
       color: #FFFFFF;
       margin-right: 38px;
-      img{
-        margin-left: 17px;
+
+      @media (max-width: 1400px) {
+        height: 50px;
+        padding: 8px 12px 11px 16px;
+        font-size: 14px;
+        margin-right: 21px;
       }
+      @media (min-width: 768px) and (max-width: 981px) {
+        padding: 4px 12px 11px 10px;
+        font-size: 12px;
+        margin-right: 12px;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+        width: 60%;
+      }
+
+      img {
+        margin-left: 17px;
+        @media (max-width: 1400px) {
+          margin-left: 8px;
+          width: 21px;
+        }
+      }
+
     }
-    .login-tag{
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      color: #000000;
+  }
+
+  .login-tag {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000000;
+
+    @media (max-width: 1088px) {
+      font-size: 12px;
     }
   }
 }
