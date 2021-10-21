@@ -12,94 +12,187 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
           rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
     <title>codibu-design</title>
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
-                <div class="col-md-4">
-                    <div class="bg-image">
-                        <div class="left-section">
-                            <img src="assets/Layer_1.svg" class="logo-img"/>
-                            <h1>Key Service.</h1>
-                            <ul>
-                                <li><img src="assets/Polygon 1.svg"/>Pre-installed WordPress Environment</li>
-                                <li><img src="assets/Polygon 1.svg"/>AWS hosting and Domain Purchase</li>
-                                <li><img src="assets/Polygon 1.svg"/>Free 800+ pre-built demos (Auto Installer)</li>
-                                <li><img src="assets/Polygon 1.svg"/>Free 5000+ plugins & themes & Free update</li>
-                                <li><img src="assets/Polygon 1.svg"/>Free SEO analysis report</li>
-                                <li><img src="assets/Polygon 1.svg"/>Best pricing packages</li>
-                                <li><img src="assets/Polygon 1.svg"/>24/7 Customer Support</li>
-                                <li><img src="assets/Polygon 1.svg"/>Hire Professionals (Upcomming)</li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="col-md-4">
+            <div class="bg-image">
+                <div class="left-section">
+                    <img src="assets/Layer_1.svg" class="logo-img"/>
+                    <h1>Key Service.</h1>
+                    <ul>
+                        <li><img src="assets/Polygon 1.svg"/>Pre-installed WordPress Environment</li>
+                        <li><img src="assets/Polygon 1.svg"/>AWS hosting and Domain Purchase</li>
+                        <li><img src="assets/Polygon 1.svg"/>Free 800+ pre-built demos (Auto Installer)</li>
+                        <li><img src="assets/Polygon 1.svg"/>Free 5000+ plugins & themes & Free update</li>
+                        <li><img src="assets/Polygon 1.svg"/>Free SEO analysis report</li>
+                        <li><img src="assets/Polygon 1.svg"/>Best pricing packages</li>
+                        <li><img src="assets/Polygon 1.svg"/>24/7 Customer Support</li>
+                        <li><img src="assets/Polygon 1.svg"/>Hire Professionals (Upcomming)</li>
+                    </ul>
                 </div>
+            </div>
+        </div>
 
-                <div class="col-md-8">
-                    <div class="right-section d-flex justify-content-center ">
-                        <div class="form d-flex align-content-center flex-wrap">
-                            <img src="assets/logo.svg" class="logo-img"/>
-                            <div class="col-12"><h1>Create your free account</h1></div>
-                            <div class="col-12">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-lg-6"><a><img src="assets/google.svg"/>Sign up with
-                                    Google</a></div>
-                                <div class="col-md-6 col-sm-6 col-lg-6"><a><img src="assets/facebook.svg"/>Sign up with
-                                    Facebook</a></div>
-                                <div class="col-md-6 col-sm-6 col-lg-6"><a> <img src="assets/amazon.svg"/>Sign up with
-                                    Amazon</a></div>
-                                <div class="col-md-6 col-sm-6 col-lg-6"><a><img src="assets/instagram.svg"/>Sign up with
-                                    Instagram</a>
-                                </div>
-                                <h6>Sign up with Email</h6>
-                                <div class="form-row col-md-6">
-                                    <label for="inputEmail4">First Name*</label>
-                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Adam">
-                                </div>
-                                <div class="form-row col-md-6">
-                                    <label for="inputPassword4">Last Name*</label>
-                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Smith">
-                                    <img src="assets/check 1.svg"/>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-12">
-                                        <label class="email">Email address*</label>
-                                        <input type="text" class="form-control" placeholder="yourmail@mail.com">
-                                        <img src="assets/check 1.svg"/>
-                                    </div>
-                                </div>
-                                <div class="form-row ">
-                                    <div class="col-md-12">
-                                        <label class="password">Password*</label>
-                                        <input type="text" class="form-control" placeholder="********">
-                                        <img src="assets/eye-off 1.svg"/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                                        <label class="form-check-label" for="gridCheck">
-                                            I agree to the<span> Terms and Condition</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <button class="signup-button">Sign up<img src="assets/arrow-right.svg"/></button>
-                                </div>
-                                <div class=" col-md-7 login-tag d-flex align-items-center">Already have an
-                                    account?<span>Login</span>
+        <div class="col-md-8">
+            <div class="right-section d-flex justify-content-center ">
+                <div class="form d-flex align-content-center flex-wrap">
+                    <img src="assets/logo.svg" class="logo-img"/>
+                    <div class="col-12"><h1>Create your free account</h1></div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-lg-6"><a><img src="assets/google.svg"/>Sign up with
+                                Google</a></div>
+                            <div class="col-md-6 col-sm-6 col-lg-6"><a><img src="assets/facebook.svg"/>Sign up with
+                                Facebook</a></div>
+                            <div class="col-md-6 col-sm-6 col-lg-6"><a> <img src="assets/amazon.svg"/>Sign up with
+                                Amazon</a></div>
+                            <div class="col-md-6 col-sm-6 col-lg-6"><a><img src="assets/instagram.svg"/>Sign up with
+                                Instagram</a>
+                            </div>
+                            <h6>Sign up with Email</h6>
+
+                            <div class="form-row col-md-6">
+                                <label for="input1">First Name*</label>
+                                <input type="text" name="username" id='input1' class="form-control" placeholder="Adam">
+                                <img src="assets/check 1.png" onkeydown="myInput()" class="tick" style="display: none"/>
+                            </div>
+                            <div class="form-row col-md-6">
+                                <label for="input2">Last Name*</label>
+                                <input type="text" class="form-control" id="input2" name="username" placeholder="Smith">
+                                <img src="assets/check 1.png" onkeydown="myInputz()" class="tick2" style="display: none"/>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-md-12">
+                                    <label for="input3" class="email">Email address*</label>
+                                    <input type="text" id="input3" class="form-control" placeholder="yourmail@mail.com">
+                                    <img src="assets/check 1.png" onkeydown="myInputx()" class="tick3" style="display: none" />
                                 </div>
                             </div>
+
+                            <div class="form-row ">
+                                <div class="col-md-12">
+                                    <label class="password">Password*</label>
+                                    <input type="password" class="form-control" id="myInput" placeholder="********">
+                                    <img src="assets/eye-off 1.svg" onclick="myFunction()" class="not_visible"/>
+                                    <img src="assets/Vector.png" onclick="myFunction()" class="visible"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        I agree to the<span> Terms and Condition</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <button class="signup-button">Sign up<img src="assets/arrow-right.svg"/></button>
+                            </div>
+                            <div class=" col-md-7 login-tag d-flex align-items-center">Already have an
+                                account?<span>Login</span>
                             </div>
                         </div>
+
+<!--                        <input type="text" id="demo" onkeydown="keydownFunction()" onkeyup="keyupFunction()"-->
+<!--                               onkeypress="keypressFunction()">-->
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+
+<!--<script>-->
+<!--    function keydownFunction() {-->
+<!--        document.getElementById("demo").style.backgroundColor = "red";-->
+<!--    }-->
+
+<!--    function keyupFunction() {-->
+<!--        document.getElementById("demo").style.backgroundColor = "green";-->
+<!--    }-->
+
+<!--    function keypressFunction() {-->
+<!--        document.getElementById("demo").style.backgroundColor = "blue";-->
+<!--    }-->
+<!--</script>-->
+
+<script>
+
+    var y = document.getElementById('input1')
+    y.addEventListener('keyup', myInput)
+    var tick = document.querySelector('.tick');
+
+    function myInput(e) {
+        //console.log(y.value);
+        if (y.value.length >= 2) {
+            tick.style.display = "block";
+        } else {
+            tick.style.display = "none";
+        }
+    }
+
+    var z = document.getElementById('input2')
+    z.addEventListener('keyup', myInputz)
+    var tick2 = document.querySelector('.tick2');
+
+    function myInputz(e) {
+        //console.log(y.value);
+        if (z.value.length >= 2) {
+            tick2.style.display = "block";
+        } else {
+            tick2.style.display = "none";
+        }
+    }
+
+    var x = document.getElementById('input3')
+    x.addEventListener('keyup', myInputx)
+    var tick3 = document.querySelector('.tick3');
+
+    function myInputx(e) {
+        filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        //console.log(y.value);
+
+        if (filter.test(x.value)) {
+            tick3.style.display = "block";
+        } else {
+            tick3.style.display = "none";
+        }
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myInput");
+        var img = document.querySelector('.visible')
+        var img2 = document.querySelector('.not_visible');
+
+        if (x.type === "password") {
+            x.type = "text";
+            img.style.display = "block";
+            img2.style.display = "none";
+        } else {
+            x.type = "password";
+            img.style.display = "none";
+            img2.style.display = "block";
+        }
+    }
+</script>
+
+<script>
+
+</script>
+
 <!--
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

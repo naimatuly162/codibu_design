@@ -370,6 +370,12 @@
     font-size: 27px;
   }
 }
+.right-section .form .form-row .not_visible {
+  display: block;
+}
+.right-section .form .form-row .visible {
+  display: none;
+}
 .right-section .form .form-row img {
   position: absolute;
   bottom: 32px;
